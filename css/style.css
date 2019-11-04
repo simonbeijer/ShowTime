@@ -1,0 +1,44 @@
+/* No padding or margin */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* HTML */
+html {
+    background-color: rgba(61, 161, 61, 0.507);
+}
+
+/* BODY */
+body {
+   
+}
+
+/* MAIN */
+main {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    color: whitesmoke;
+    display: flex;
+    z-index: 1500;
+    margin: auto;
+}
+
+main .dateDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+main .dateDiv {
+    font-size: 2rem;
+}
+
+/* FOOTER */
+footer {
+
+}
