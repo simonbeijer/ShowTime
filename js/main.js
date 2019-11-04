@@ -8,6 +8,7 @@ console.log("Time", date.getTime());
 console.log("Hour", date.getHours());
 console.log("Minutes", date.getMinutes());
 
+
 let dateYear = date.getFullYear();
 let dateMonth = date.getMonth();
 let dateDay = date.getDay();
@@ -35,11 +36,18 @@ function updateTime() {
     dateS = addZero(dateS);
 
     document.querySelector(".dateDiv .time").innerText = dateH + ":" + dateM + ":" + dateS;
-    update = setInterval(function() {updateTime()}, 500)
-    console.log("uppdaterat");
+    update = setTimeout(function() {updateTime()}, 500)
+    console.log("uppdaterat nu");
 }
 
-document.querySelector(".dateDiv .year").innerText = dateYear;   
+updateTime();
+
+
+document.querySelector(".dateDiv .year").innerText = dateYear;
+
+
+
+
 
 
 /**
