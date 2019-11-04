@@ -8,6 +8,7 @@ console.log("Time", date.getTime());
 console.log("Hour", date.getHours());
 console.log("Minutes", date.getMinutes());
 
+let dateYear = date.getFullYear();
 let dateMonth = date.getMonth();
 let dateDay = date.getDay();
 let dateTime = date.getTime();
@@ -38,14 +39,7 @@ function updateTime() {
     console.log("uppdaterat");
 }
 
-updateTime();
-
-
-
-
-
-
-
+document.querySelector(".dateDiv .year").innerText = dateYear;   
 
 
 /**
